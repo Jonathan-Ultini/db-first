@@ -1,0 +1,19 @@
+Nome tabella: used_cars
+
+Campo                 Tipo dati         Attributi                       Descrizione
+id	                  BIGINT	          PRIMARY_KEY, AUTO_INCREMENT	    Identificativo univoco dell'auto.
+brand	                VARCHAR(20)	      NOT_NULL	                      Marca dell'auto (Ford, Audi).
+model	                VARCHAR(20)	      NOT_NULL	                      Modello dell'auto (Fiesta, Q8).
+year	                YEAR	            NOT_NULL	                      Anno di produzione dell'auto.
+mileage	              UNSIGNED INT	    NOT_NULL	                      Chilometraggio percorso dall'auto.
+fuel_type	            VARCHAR(20)	      NOT_NULL	                      Tipo di carburante (Benzina, Diesel, Elettrico).
+wheel_type            VARCHAR(20)       NOT_NULL                        tipo di ruote (invernali, estive, 4stagioni)
+price	                DECIMAL(10,2)	    NOT_NULL	                      Prezzo dell'auto in euro.
+color	                VARCHAR(20)	      NULL	                          Colore dell'auto.
+number_of_doors	      TINYINT	          NULL	                          Numero di porte (2, 4, etc.).
+available	            BOOLEAN	          NOT_NULL, DEFAULT(true)	        Se l'auto è disponibile alla vendita (true o false).
+description	          TEXT	            NULL	                          Descrizione aggiuntiva, ad esempio, condizioni, accessori, ecc.
+note	                TEXT	            NULL	                          Note per eventuali informazioni aggiuntive interne.
+transmission	        VARCHAR(20)	      NOT_NULL	                      Tipo di trasmissione (es. Manuale, Automatica).
+engine_size	          DECIMAL(3,1)	    NOT_NULL	                      Cilindrata del motore (es. 1.4, 2.0).
+damage                BOOLEAN           NOT_NULL                        Se la macchina è danneggiata
